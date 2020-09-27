@@ -3,7 +3,7 @@
 
   "theme": "dark",
   "initialPosition": "55,25",
-  "initialCols": 305,
+  "initialCols": 304,
   "initialRows": 36,
 
   "multiLinePasteWarning": false,
@@ -36,6 +36,7 @@
       {
         "guid": "{00000000-0000-0000-ba54-000000000002}",
         "name": "Bash",
+        "icon" : "%PROGRAMFILES%\\git\\mingw64\\share\\git\\git-for-windows.ico",
         "commandline" : "\"%PROGRAMFILES%\\git\\usr\\bin\\bash.exe\" -i -l"
       },
       {
