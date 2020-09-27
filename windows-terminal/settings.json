@@ -1,0 +1,105 @@
+{
+  "defaultProfile": "{00000000-0000-0000-ba54-000000000002}",
+
+  "theme": "dark",
+  "initialPosition": "55,25",
+  "initialCols": 305,
+  "initialRows": 36,
+
+  "multiLinePasteWarning": false,
+  "useTabSwitcher": false,
+  "confirmCloseAllTabs": false,
+
+  "$schema": "https://aka.ms/terminal-profiles-schema",
+
+  "profiles": {
+    "defaults": {
+      "colorScheme": "One Half Dark Custom",
+      "fontFace": "JetBrains Mono",
+      "fontSize": 10,
+      "acrylicOpacity": 0.9,
+      "padding": "22, 16, 22, 16",
+      "closeOnExit": true,
+      "useAcrylic": true,
+      "snapOnInput": true,
+      "historySize": 9001,
+      "cursorShape": "vintage",
+      "startingDirectory": "D:\\Workspace",
+      "hidden": false
+    },
+    "list": [
+      {
+        "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+        "name": "Ubuntu",
+        "source": "Windows.Terminal.Wsl"
+      },
+      {
+        "guid": "{00000000-0000-0000-ba54-000000000002}",
+        "name": "Bash",
+        "commandline" : "\"%PROGRAMFILES%\\git\\usr\\bin\\bash.exe\" -i -l"
+      },
+      {
+        "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+        "name": "PowerShell",
+        "commandline": "powershell.exe"
+      },
+      {
+        "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+        "name": "cmd",
+        "commandline": "cmd.exe"
+      },
+      {
+        "guid": "{46ca431a-3a87-5fb3-83cd-11ececc031d2}",
+        "name": "Kali Linux",
+        "source": "Windows.Terminal.Wsl"
+      },
+      {
+          "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+          "hidden": true,
+          "name": "Azure Cloud Shell",
+          "source": "Windows.Terminal.Azure"
+      }
+    ]
+  },
+
+  "schemes": [
+    {
+        "name": "One Half Dark Custom",
+        "foreground": "#DCDFE4",
+        "background": "#282C34",
+        "cursorColor": "#FFFFFF",
+        "black": "#282C34",
+        "red": "#E06C75",
+        "green": "#98C379",
+        "yellow": "#E5C07B",
+        "blue": "#282C34",
+        "purple": "#C678DD",
+        "cyan": "#56B6C2",
+        "white": "#DCDFE4",
+        "brightBlack": "#5A6374",
+        "brightRed": "#E06C75",
+        "brightGreen": "#98C379",
+        "brightYellow": "#E5C07B",
+        "brightBlue": "#61AFEF",
+        "brightPurple": "#C678DD",
+        "brightCyan": "#56B6C2",
+        "brightWhite": "#DCDFE4"
+    }
+  ],
+
+  "keybindings": [
+  	{ "command": "nextTab", "keys": "alt+right" },
+    { "command": "prevTab", "keys": "alt+left" },
+
+    { "command": { "action": "splitPane", "split": "auto" }, "keys": "ctrl+alt+1" },
+    { "command": { "action": "splitPane", "split": "auto", "profile": "{00000000-0000-0000-ba54-000000000002}" }, "keys": "ctrl+alt+2" },
+    { "command": { "action": "splitPane", "split": "auto", "profile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}" }, "keys": "ctrl+alt+3" },
+
+    { "command": { "action": "moveFocus", "direction": "down" }, "keys": "ctrl+alt+down" },
+    { "command": { "action": "moveFocus", "direction": "left" }, "keys": "ctrl+alt+left" },
+    { "command": { "action": "moveFocus", "direction": "right" }, "keys": "ctrl+alt+right" },
+    { "command": { "action": "moveFocus", "direction": "up" }, "keys": "ctrl+alt+up" },
+
+    { "command": { "action": "toggleAlwaysOnTop" }, "keys": "alt+1" }
+  ]
+}
